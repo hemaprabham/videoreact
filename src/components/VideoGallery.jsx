@@ -7,7 +7,7 @@ const VideoGallery = () => {
     const [data,ChangeData]=useState([])
 
     const fetchData=()=>{
-        axios.post("http://127.0.0.1:8000/subtitles/").then(
+        axios.post("http://127.0.0.1:8000/").then(
             (response)=>{
                 ChangeData(response.data)
             }
